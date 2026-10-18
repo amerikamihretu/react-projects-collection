@@ -1,0 +1,17 @@
+@import "tailwindcss"; 
+/* Tailwind CSS v4 directive: configure dark mode to use the `.dark` class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes toast-progress {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+.toast-progress {
+  animation: toast-progress 3s linear forwards;  
+}             /*this can be but directly in the component using className  butnot the keyframe */
